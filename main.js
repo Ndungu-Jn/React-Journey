@@ -82,3 +82,68 @@ function logAll(first, ...rest) {
 }
 
 logAll(10, 20, 30, 40);
+
+//array methods
+//map, filter, find, some, every,includes,indexOf, findIndex
+const personArray = [
+  {
+    name: "person 1 ",
+    age: 30,
+    country: "india",
+  },
+  {
+    name: "person 2 ",
+    age: 50,
+    country: "Kenya",
+  },
+  {
+    name: "person 3 ",
+    age: 20,
+    country: "indonesia",
+  },
+];
+//map  --getting the name
+let getAllNames = personArray.map((singlePerson, index) => {
+  console.log(singlePerson, index);
+  return `${singlePerson.name} age is ${singlePerson.age}`;
+});
+
+console.log(getAllNames);
+
+//find -- any condition that is satisfying  -- returns the first object
+//If .find() finds nothing, it returns undefined.
+
+//.filter() always returns an array, even if it's empty. -- returns the whole array.
+
+let getPersonKenya = personArray.find((singlePerson, index) => {
+  return singlePerson.country === "Kenya";
+});
+console.log(getPersonKenya);
+
+//some and every
+//some -- atleast one element passes the test.
+//every -- all elements pass the test
+const numbers = [1, 2, 3, 4, 5];
+
+// some: is at least one number even?
+const hasEven = numbers.some((num) => num % 2 === 0);
+console.log(hasEven); // true (2, 4)
+
+// every: are all numbers even?
+const allEven = numbers.every((num) => num % 2 === 0);
+console.log(allEven); // false
+
+//includes -- checks if an element is  present in an array
+const fruitsArray = ["apple", "banana", "orange"];
+console.log(fruitsArray.includes("apple"));
+
+//indexOf -- returns the index of that said element
+console.log(fruitsArray.indexOf("apple"));
+
+//findIndex
+
+let getIndexKenya = personArray.findIndex((singlePerson) => {
+  return singlePerson.country === "Kenya";
+});
+
+console.log(getIndexKenya);
