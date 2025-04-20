@@ -1,2 +1,4 @@
 Es6 components
 Fetching products fromthe DummyJSON API 
+Getting started with react
+-- 
