@@ -6,3 +6,5 @@ Getting started with react
 
 Ensure there are exports from the components to  the app.jsx and dont inlude  the round brackets
 -- Nested components
+--keys and lists
+--props  --- short for properties -- how I pass data form a parent component to a child component   -- think of it like a function argument, but for react components
