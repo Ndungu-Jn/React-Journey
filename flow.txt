@@ -1,1 +1,2 @@
 Es6 components
+Fetching products fromthe DummyJSON API 
